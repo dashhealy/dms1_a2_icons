@@ -32,10 +32,19 @@
         <div class="image-container"><img id="spirit" src="img/spirit 1@2x.png" height="200" width="200"/></div>
         <div class="image-container"><img id="city" src="img/city 1@2x.png" height="200" width="200"/></div>
     </div>
+
+    <canvas id="cnv_element"></canvas>
+    <script src="script.js"></script>
 </body>
 
 <script>
-    const plant_variable = document.getElementById ('plant')
-    const plant_audio = new Audio ('rmit.wav')
-    plant.onpointerdown = () => plant_audio.play ()
+
+    const plant = document.getElementById ('plant_id')
+    const plant_audio = new Audio ('sounds/rmit.wav')
+    plant.onpointerdown = () => {
+        plant_audio.play ()
+        plant.src='img/Plant 2.png'
+        setTimeout (() => plant.src='img/Plant 1.png', 1000)
+    }
+
 </script>
