@@ -17,8 +17,8 @@
 <body>
     <div class="row">
         <div class="image-container"><img id="plant" src="img/Plant 1.png" height="200" width="200"/></div>
-        <div class="image-container"><img id="tri" src="img/tri.png" height="200" width="200"/></div>
-        <div class="image-container"><img id="squ" src="img/squ.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="age" src="img/age 1@2x.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="tree" src="img/tree 1@2x.png" height="200" width="200"/></div>
     </div>
 
     <div class="row">
@@ -35,12 +35,10 @@
 </body>
 
 <script>
-    const plant = document.getElementById('plant')
-    const plant_audio = new Audio ('sounds/RMIT University.wav')
-    plant.onpointerdown = () => {
-        plant_audio.play ()
-        plant_variable.src = "img/Plant 2.png"
-        setTimeout (() => cir_variable.src = "img/Plant 1.png", 1000)
-    }
+    const tree = document.getElementById ('tree_id')
+    const tree_audio = new Audio ('sounds/RMIT University.wav')
+    tree.onpointerdown = () => tree_audio.play ()
+    tree.onpointerover = () => tree.src = 'img/squ.png'
+    tree.onpointerout = () => tree.src = 'img/tree@2x.png'
 
 </script>
