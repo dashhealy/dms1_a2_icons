@@ -16,21 +16,21 @@
 
 <body>
     <div class="row">
-        <div class="image-container"><img id="plant" src="img/Plant 1.png" height="200" width="200"/></div>
-        <div class="image-container"><img id="age" src="img/age 1@2x.png" height="200" width="200"/></div>
-        <div class="image-container"><img id="tree" src="img/tree 1@2x.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="plant_id" src="img/Plant 1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="age_id" src="img/age 1@2x.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="tree_id" src="img/tree 1@2x.png" height="210" width="210"/></div>
     </div>
 
     <div class="row">
-        <div class="image-container"><img id="arm" src="img/arm 1@2x.png" height="200" width="200"/></div>
-        <div class="image-container"><img id="flower" src="img/flower 1@2x.png" height="200" width="200"/></div>
-        <div class="image-container"><img id="graph" src="img/graph 1@2x.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="arm_id" src="img/arm 1@2x.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="flower_id" src="img/flower 1@2x.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="graph_id" src="img/graph 1@2x.png" height="200" width="200"/></div>
         </div>
 
     <div class="row">
-        <div class="image-container"><img id="mind" src="img/mind 1@2x.png" height="200" width="200"/></div>
-        <div class="image-container"><img id="spirit" src="img/spirit 1@2x.png" height="200" width="200"/></div>
-        <div class="image-container"><img id="city" src="img/city 1@2x.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="mind_id" src="img/mind 1@2x.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="spirit_id" src="img/spirit 1@2x.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="city_id" src="img/city 1@2x.png" height="200" width="200"/></div>
     </div>
 
 </body>
@@ -42,7 +42,7 @@
     plant.onpointerdown = () => {
         plant_audio.play ()
         plant.src='img/Plant 2.png'
-        setTimeout (() => plant.src='img/Plant 1.png', 1000)
+        setTimeout (() => plant.src='img/Plant 1.png', 2000)
     }
 
     const age = document.getElementById ('age_id')
@@ -58,15 +58,15 @@
     tree.onpointerdown = () => {
         tree_audio.play ()
         tree.src='img/tree 2@2x.png'
-        setTimeout (() => tree.src='img/tree 1@2x.png', 1000)
+        setTimeout (() => tree.src='img/tree 1@2x.png', 1500)
     }
 
     const arm = document.getElementById ('arm_id')
     const arm_audio = new Audio ('sounds/arm sfx.mp3')
     arm.onpointerdown = () => {
         arm_audio.play ()
-        arm.src='img/arm 2@2x.png'
-        setTimeout (() => arm.src='img/arm 1@2x.png', 1000)
+        arm.src='img/arm2@2x.png'
+        setTimeout (() => arm.src='img/arm 1@2x.png', 1250)
     }
 
     const flower = document.getElementById ('flower_id')
@@ -74,7 +74,7 @@
     flower.onpointerdown = () => {
         flower_audio.play ()
         flower.src='img/flower 2@2x.png'
-        setTimeout (() => flower.src='img/flower 1@2x.png', 1000)
+        setTimeout (() => flower.src='img/flower 1@2x.png', 1750)
     }
 
     const graph = document.getElementById ('graph_id')
@@ -82,7 +82,7 @@
     graph.onpointerdown = () => {
         graph_audio.play ()
         graph.src='img/graph 2@2x.png'
-        setTimeout (() => graph.src='img/graph 1@2x.png', 1000)
+        setTimeout (() => graph.src='img/graph 1@2x.png', 1200)
     }
 
     const mind = document.getElementById ('mind_id')
@@ -98,7 +98,7 @@
     spirit.onpointerdown = () => {
         spirit_audio.play ()
         spirit.src='img/spirit 2@2x.png'
-        setTimeout (() => spirit.src='img/spirit 1@2x.png', 1000)
+        setTimeout (() => spirit.src='img/spirit 1@2x.png', 2000)
     }
 
     const city = document.getElementById ('city_id')
@@ -106,7 +106,7 @@
     city.onpointerdown = () => {
         city_audio.play ()
         city.src='img/city 2@2x.png'
-        setTimeout (() => city.src='img/city 1@2x.png', 1000)
+        setTimeout (() => city.src='img/city 1@2x.png', 3000)
     }
     
 </script>
