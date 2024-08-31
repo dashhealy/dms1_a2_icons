@@ -16,7 +16,7 @@
 
 <body>
     <div class="row">
-        <div class="image-container"><img id="cir" src="img/cir.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="plant" src="img/Plant 1.png" height="200" width="200"/></div>
         <div class="image-container"><img id="tri" src="img/tri.png" height="200" width="200"/></div>
         <div class="image-container"><img id="squ" src="img/squ.png" height="200" width="200"/></div>
     </div>
@@ -35,7 +35,12 @@
 </body>
 
 <script>
-    const cir = document.getElementById('cir')
-    const cir_audio = new Audio ('sounds/RMIT University.wav')
-    cir.onpointerdown = () => cir_audio.play ()
+    const plant = document.getElementById('plant')
+    const plant_audio = new Audio ('sounds/RMIT University.wav')
+    plant.onpointerdown = () => {
+        plant_audio.play ()
+        plant_variable.src = "img/Plant 2.png"
+        setTimeout (() => cir_variable.src = "img/Plant 1.png", 1000)
+    }
+
 </script>
